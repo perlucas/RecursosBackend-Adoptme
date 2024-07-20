@@ -18,7 +18,7 @@ app.use(cookieParser());
 
 app.engine('handlebars', engine())
 app.set('view engine', 'handlebars');
-app.set('views', `${__dirname}/views`);
+app.set('views', './views');
 
 
 app.use('/', viewsRouter)
